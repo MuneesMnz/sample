@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2px;
+        }
+
+        .main{
+            height: 500px;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .head{
+            background-color: aqua;
+            padding: 40px 0px;
+        }
+        .submenu{
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .sidenav{
+            background-color: green;
+            padding-top: 50px;
+            flex:1 1 auto;
+
+        }
+        .content{
+            background-color: blue;
+            padding-top: 50px;
+            flex:8 3
+        }
+        .sidnav2{
+            background-color: blueviolet;
+            padding-top: 50px;
+            flex:1 1 auto;
+        }
+        .footer{
+            background-color:red;
+            padding: 40px 0px;
+        }
+
+        @media only screen and (max-width: 600px){
+            .submenu{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            Heading
+        </div>
+        <div class="submenu">
+            <div class="sidenav">
+                Sidenav one
+            </div>
+            <div class="content">
+                Content
+            </div>
+            <div class="sidnav2">
+                sidenav two
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
